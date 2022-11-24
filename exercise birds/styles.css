@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background:#7dffb9;
+    border: 2px solid #fffc00;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: auto;
+    width: 200px;
+
+}
+
+ul li {
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding: 5px 0 5px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    color: #e800b0 ;
+    border-bottom: 1px solid #e800b0 ;
+    transition: 0.3s;
+}
+
+@keyframes firstanimation {
+      0%   {border-bottom:3px solid #00caff;}
+      25%  {border-bottom:3px solid #e800b0;}
+      50%  {border-bottom:3px solid #fffc00;}
+      100% {border-bottom:3px solid #7dffb9;}
+    }
+
+h3 {
+    border-bottom:3px solid #00caff;
+    color: gray;
+    padding: 10px 0px 15px 0px;
+    margin-bottom: 5px;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: firstanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
